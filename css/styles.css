@@ -1,1 +1,64 @@
+:root {
+  --bg-color-header: #ffffff;
+  --bg-color-section-light: #e5e5e5;
+  --bg-color-section-dark: #f5f4fa;
+  --bg-color-footer: #2f303a;
 
+  --text-color-main: #757575;
+  --text-color-heading: #212121;
+  --text-color-white: #ffffff;
+  --text-color-footer-address: rgba(255, 255, 255, 0.6);
+
+  --accent-color: #2196f3;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color-main);
+}
+
+/* utility classes */
+
+.list {
+  list-style: none;
+}
+
+/* header */
+.page-header {
+  background-color: var(--bg-color-header);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  text-decoration: none;
+}
+
+.selection {
+  color: var(--accent-color);
+}
+
+.page-header .nav-site-link {
+  color: var(--text-color-heading);
+  text-decoration: none;
+}
+
+.page-header .nav-site-link.current {
+  color: var(--accent-color);
+}
+
+.page-header .nav-site-link:hover,
+.page-header .nav-site-link:focus {
+  color: var(--accent-color);
+}
