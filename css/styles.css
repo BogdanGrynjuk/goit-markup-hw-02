@@ -139,6 +139,7 @@ h6 {
   line-height: 1.88;
 
   color: var(--text-color-white);
+  cursor: pointer;
 }
 
 /* section features */
@@ -219,6 +220,7 @@ h6 {
 .filters-list .filters-btn:hover,
 .filters-list .filters-btn:focus {
   background-color: var(--accent-color);
+  cursor: pointer;
 
   color: var(--text-color-white);
 }
