@@ -2,10 +2,14 @@
   --bg-color-header: #ffffff;
   --bg-color-section-light: #e5e5e5;
   --bg-color-section-dark: #f5f4fa;
+  --bg-color-team-card: #ffffff;
   --bg-color-footer: #2f303a;
+  --bg-color-button: #f5f4fa;
+  --bg-color-project-card: #ffffff;
 
   --text-color-main: #757575;
   --text-color-heading: #212121;
+  --text-color-black: #000000;
   --text-color-white: #ffffff;
   --text-color-footer-address: rgba(255, 255, 255, 0.6);
 
@@ -19,7 +23,17 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
   color: var(--text-color-main);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-color-heading);
 }
 
 /* utility classes */
@@ -28,9 +42,13 @@ body {
   list-style: none;
 }
 
+/* page studio */
+
 /* header */
+
 .page-header {
   background-color: var(--bg-color-header);
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -41,12 +59,16 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #000000;
+
+  color: var(--accent-color);
   text-decoration: none;
 }
+.logo--dark {
+  color: var(--text-color-black);
+}
 
-.selection {
-  color: var(--accent-color);
+.logo--ligt {
+  color: var(--text-color-white);
 }
 
 .page-header .nav-site-link {
@@ -61,4 +83,160 @@ body {
 .page-header .nav-site-link:hover,
 .page-header .nav-site-link:focus {
   color: var(--accent-color);
+}
+
+/* section */
+
+.section--light {
+  background-color: var(--bg-color-section-light);
+}
+
+.section--dark {
+  background-color: var(--bg-color-section-dark);
+}
+
+.section-heading {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+/* section hero */
+
+.hero {
+  background-color: var(--bg-color-footer);
+}
+
+.hero .section-heading {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--text-color-white);
+}
+
+.hero .button {
+  background-color: var(--accent-color);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--text-color-white);
+}
+
+/* section features */
+
+.features-list .feature-title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* section activities */
+
+/* section out team */
+
+.team-cards {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.team-cards .team-card {
+  background-color: var(--bg-color-team-card);
+}
+
+.team-cards .worker-name {
+  font-weight: 500;
+}
+
+.team-cards .worker-position {
+  font-weight: 400;
+}
+
+/* footer */
+
+.page-footer {
+  background-color: var(--bg-color-footer);
+}
+
+.address-list {
+  font-style: normal;
+
+  color: var(--text-color-footer-address);
+}
+
+.address-list .address-link {
+  font-style: normal;
+
+  color: var(--text-color-footer-address);
+
+  text-decoration: none;
+}
+
+.address-list .address-link--white {
+  color: var(--text-color-white);
+}
+
+/* page portfolio */
+
+/* section portfolio */
+
+.filters-list .filters-btn {
+  background-color: var(--bg-color-button);
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-heading);
+}
+
+.filters-list .filters-btn.current,
+.filters-list .filters-btn:hover,
+.filters-list .filters-btn:focus {
+  background-color: var(--accent-color);
+
+  color: var(--text-color-white);
+}
+
+.projects-list .projects-item {
+  background-color: var(--bg-color-project-card);
+}
+
+.projects-list .projects-link {
+  text-decoration: none;
+}
+
+.project-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-description {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--text-color-main);
 }
