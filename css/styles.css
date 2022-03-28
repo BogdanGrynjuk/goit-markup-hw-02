@@ -85,6 +85,16 @@ h6 {
   color: var(--accent-color);
 }
 
+.contacts-list .contacts-link {
+  text-decoration: none;
+  color: var(--text-color-main);
+}
+
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
+  color: var(--accent-color);
+}
+
 /* section */
 
 .section--light {
