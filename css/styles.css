@@ -194,6 +194,11 @@ h6 {
   text-decoration: none;
 }
 
+.address-list .address-link:hover,
+.address-list .address-link:focus {
+  color: var(--accent-color);
+}
+
 .address-list .address-link--white {
   color: var(--text-color-white);
 }
@@ -212,6 +217,7 @@ h6 {
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 
   color: var(--text-color-heading);
 }
@@ -220,7 +226,6 @@ h6 {
 .filters-list .filters-btn:hover,
 .filters-list .filters-btn:focus {
   background-color: var(--accent-color);
-  cursor: pointer;
 
   color: var(--text-color-white);
 }
